@@ -1,13 +1,8 @@
-
-#Customer Segmentation using Kmeans clustering
-
-Mart sales data set consist of below 5 features
-Customer ID,Gender,Age,Annualincome,Spending score.
-Based on Annual income,spending score of the customer is predicted
-using K-Means clustering which is an unsupervised classification algorithm.
-K value is chosed using elbow method.
-Distance between the centroid and every other data points is calculated and 
-stored in a array.
-For better visualization,plotted scatter plot using matplotlib. 
-Each cluster denotes a  class of customers thereby
-customers are segregated into different clusters.
+#Aim:To segment customers to get a better understanding of them which in turn could be used to increase the revenue of the company.
+Customer Segmentation is the subdivision of a market into discrete customer groups that share similar characteristics.
+Clustering is a type of unsupervised machine learning in which the algorithm processes our data and divides data into “clusters”.
+It is a centroid based algorithm in which each cluster is associated with a centroid. The main idea is to reduce the distance between the data points and their respective cluster centroid.
+Working of K Means Clustering Algorithm
+Specify number of clusters K.(K value can be selected from elbow method)
+Initialize centroids by first shuffling the dataset and then randomly selecting K data points for the centroids without replacement.
+Keep iterating until there is no change to the centroids. i.e assignment of data points to clusters isn’t changing.
